@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>Travel Guide</title>
+   <link rel="stylesheet" href="style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+   <!-- <footer>&copy; Copyright 2022 TravelGuide</footer> -->
+   <nav>
+      <div class="menu-icon">
+         <span class="fas fa-bars"></span>
+      </div>
+      <div class="logo">
+         TravelGuide
+      </div>
+      <div class="nav-items">
+         <li><a href="#">Home</a></li>
+         <li><a href="#">Destinations</a></li>
+         <li><a href="#">Events</a></li>
+         <li><a href="#">Our staff</a></li>
+         <li><a href="#">Contact us</a></li>
+      </div>
+      <div class="search-icon">
+         <span class="fas fa-search"></span>
+      </div>
+      <div class="cancel-icon">
+         <span class="fas fa-times"></span>
+      </div>
+      <form action="#">
+         <input type="search" class="search-input" onclick="showDropList()" placeholder="Search" required>
+         <button type="submit" class="fas fa-search"></button>
+      </form>
+   </nav>
+   <div class="dropdown">
+      <div id="myDropdown" class="dropdownList">
+         <a href="https://en.wikipedia.org/wiki/Georgia_(country)" target="_blank">Georgia</a>
+         <a href="https://en.wikipedia.org/wiki/Finland" target="_blank">Finland</a>
+         <a href="https://en.wikipedia.org/wiki/Germany" target="_blank">Germnay</a>
+         <a href="https://en.wikipedia.org/wiki/Netherlands" target="_blank">Netherlands</a>
+         <a href="https://en.wikipedia.org/wiki/France" target="_blank">France</a>
+      </div>
+   </div>
+</br> 
+<h1>Welcome To Travel Guide</h1>
+<h1>We Offer Guided Trips and Tours</h1>
+   <script src="index.js"></script>
+</body>
+</html>

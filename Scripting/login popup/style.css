@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Hubballi&family=Inconsolata&family=Pacifico&family=Rubik+Bubbles&display=swap');
+
+* {
+  font-family: 'Shadows Into Light';
+  color: white;
+}
+
+body {
+  background: #f6b60d;
+  color: white;
+  margin: 0;
+}
+
+.popup .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%) scale(0);
+  width: 300px;
+  height: 450px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background: #372800;
+  box-shadow: 38px 38px 56px #513d07;;
+  z-index: 1;
+}
+
+.popup .close-button {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  border: solid;
+  border-radius: 50%;
+  color: white;
+  padding: 2px 5px 7px 5px;
+  background: #6e5206;
+  cursor: pointer;
+}
+
+.popup.active .content {
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+a {
+  font-weight: 600;
+  color: rgb(155, 175, 229);
+}
+
+.input .validate {
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 15px;
+  color: rgb(21, 4, 4);
+  background: #f6b60d;
+  box-shadow: inset 5px 5px 5px #f6b60d;
+  outline: none;
+}
+
+.first-button {
+  top: 50%;
+  left: 20%;
+  background-color: #372800;
+  border: solid;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: box-shadow .35s ease !important;
+}
+
+.first-button:active {
+  background: linear-gradient(145deg, #ffd300, #ffd300);
+  box-shadow: 5px 5px 10px ffd300;
+  border: none;
+}
+
+.second-button {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 20px 30px;
+  background-color: #f6b60d;
+  border: solid;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  transition: box-shadow .35s ease !important;
+  outline: none;
+}
+
+.second-button:active {
+  background: linear-gradient(145deg, #c80909, #ffd300);
+  box-shadow: 5px 5px 10px #262626, -5px -5px 10px #ffd300;
+  border: none;
+  outline: none;
+}
+
+p {
+  color: rgb(155, 175, 229);
+  padding: 20px;
+}

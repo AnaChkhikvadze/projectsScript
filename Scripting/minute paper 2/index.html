@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset=utf-8 />
+    <title>Choose color</title>
+
+</head>
+
+<body id="Body">
+    <h1>Choose color</h1>
+    <p>choosing color:</p>
+    <p id="curDate"></p>
+    <label for="guess">Color</label>
+    <input type="text" id="guess">
+    <input type="submit" id="submitGuess" value="Check My Guess">
+
+    <p id="feedback"></p>
+    <script>
+        const date = document.getElementById("curDate");
+        var day = new Date();
+        var time = day.getHours() + ":" + day.getMinutes() + ":" + day.getSeconds();
+        date.innerHTML += "Current date: " + time;
+        function checkGuess() {
+            let myGuess = guess.value;
+            if (myGuess === "Red" || myGuess === "Green" || myGuess === "Blue" || myGuess === "red" || myGuess === "green" || myGuess === "blue") {
+                feedback.textContent = "You Won!"
+                alert("Congrats! you guessed it.");
+            } else {
+                feedback.textContent = "You lost. Try Again!"
+            }
+        }
+        submitGuess.addEventListener('click', checkGuess)
+
+    </script>
+</body>
+
+</html>

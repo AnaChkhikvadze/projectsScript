@@ -1,0 +1,90 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background: url(time.webp) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 450px;
+  height: 100vh;
+}
+
+h1 {
+  width: 95%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+  text-shadow: 2px 2px black;
+}
+
+.container {
+  min-width: 650px;
+  min-height: 550px;
+  background: #253e54c7;
+  position: absolute;
+  top: 20%;
+  left: 25%;
+  border-radius: 10px;
+}
+
+.inputs{
+  min-width: 650px;
+  min-height: 150px;
+  background: #0b3356c7;
+  position: absolute;
+  top: 2%;
+  left: 25%;
+  border-radius: 10px;
+}
+
+p {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  color: red;
+  text-shadow: 1px 1px black;
+
+}
+label{
+  margin: 10px;
+  color: red;
+  text-shadow: 1px 1px black;
+}
+
+#event{
+  min-width: 120px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  border: 2px solid rgb(69, 5, 187);
+  box-shadow: 1px 1px black;
+}
+
+button {
+  width: 100px;
+  background: green;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline-style: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px black;
+
+}
+
+button:hover {
+  color: yellow;
+  border-bottom: 1px solid #993213;
+}

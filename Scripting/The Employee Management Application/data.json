@@ -1,0 +1,34 @@
+{
+    "data" : [
+        {
+            "firstname": "Syd",
+            "lastname": "Barret",
+            "city": "Cambridge",
+            "job": "singer-songwriter"
+        },
+        {
+            "firstname": "Roger",
+            "lastname": "Waters",
+            "city": "London",
+            "job": "musician"
+        },
+        {
+            "firstname": "Nick",
+            "lastname": "Mason",
+            "city": "Birmingham",
+            "job": "Composer"
+        },
+        {
+            "firstname": "Richard",
+            "lastname": "Wright",
+            "city": "Cambridge",
+            "job": "Musician"
+        },
+        {
+            "firstname": "David",
+            "lastname": "Gilmour",
+            "city": "Cambridge",
+            "job": "singer-songwriter"
+        }
+    ]
+}
