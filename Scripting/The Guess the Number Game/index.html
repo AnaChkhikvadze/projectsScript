@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+    <h2>WELCOME HERE!</h2>
+    <br>
+    <h3>Let's play number guessing game.</h3>
+    <h3>Rules are simple: </h3>
+    <h3>you have to guess the number i think of in a range of 1-10.</h3>
+    <br>
+    <div class="form">
+        <label for="guessField">Enter your guess: </label><input type="text" id="guessField">
+        <button type="button" onClick="checkGuess()" id="guessSubmit">Enter Guess</button>
+    </div>
+    <p id="guesses"></p>
+    <p id="lastResult"></p>
+    <p id="lowOrHi"></p>
+
+</div>
+</body>
+
+<script src ="script.js"></script>
+
+</html>

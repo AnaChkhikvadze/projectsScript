@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>      
+    </body>
+
+    <script>
+        alert("Welcome to color game! ")
+        let guesses = 0;
+
+        let firstQuestion = prompt("What color is banana?");
+        while(firstQuestion != "yellow"){
+            firstQuestion = prompt("Think carefuly, what color is banana?")
+            guesses = guesses + 1;
+        }
+        if(firstQuestion == "yellow"){
+            guesses = guesses + 1;
+        }
+
+        let secondQuestion = prompt("What color is watermelon?")
+        while(secondQuestion != "green"){
+            secondQuestion = prompt("Think carefuly, what color is watermelon?");
+            guesses = guesses + 1;
+        }
+
+        if(secondQuestion == "green"){
+            guesses = guesses + 1;
+        }
+
+        let thirdQuestion = prompt("What color is strawberry?")
+        while(thirdQuestion != "red"){
+            thirdQuestion = prompt("Think carefuly, what color is strawberry?");
+            guesses = guesses + 1;
+        }
+
+        if(thirdQuestion == "red"){
+            guesses = guesses + 1;
+        }
+
+        alert("You guessed questions in " + guesses + " tries.");
+    </script>
+</html>

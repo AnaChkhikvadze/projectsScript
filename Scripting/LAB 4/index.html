@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        LAB 4
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="email" id="email" value="zruvalca@sdccd.edu">
+    <script>
+        function displayCar() {
+            window.console.log("I own a white Chevy Camaro");
+        }
+        displayCar(); //returns: "I own a white Chevy Camaro"
+
+        //with 3 parameters:
+        function displayCar(color, make, model) {
+            window.console.log("I own a " + color + " " + make + " " + model + ".");
+        }
+        displayCar("Red", "Chevy", "Camaro"); //returns: "I own a Red Chevy Camaro.""
+
+        //With 2 parameters
+        function displayCar(make, model) {
+            window.console.log("You own a " + make + " " + model + ".");
+        }
+        displayCar("Chevy", "Camaro"); //returns: "You own a Chevy Camaro.""
+
+        //with array
+        function displayCar(car) {
+            window.console.log("You own a " + car[0] + " " + car[1] + ".");
+            car[0] = "Chevy";
+        }
+        var vehicle = ["Honda", "Civic"]; //returns: "You own a Honda Civic.""
+        displayCar(vehicle); window.console.log(vehicle[0]); //returns: "Chevy"
+
+
+        function displayCar(make, model) {
+            window.console.log("You own a " + arguments[0] + " " + arguments[1] + ".");
+        }
+        displayCar("Chevy", "Camaro"); //returns; You own a Chevy Camaro.
+
+
+        function calculate(numbers) {
+            var base = Number(numbers);
+            for (var i = 1; i < arguments.length; i++) {
+                base += Number(arguments[i]);
+            } window.console.log(base);
+        }
+        calculate(2, 2, 20); //returns: 24
+
+        //with returning value from fucntion
+        function calculate(numbers) {
+            var base = Number(numbers);
+            for (var i = 1; i < arguments.length; i++) {
+                base += Number(arguments[i]);
+            }
+            return base;
+        }
+        window.console.log(calculate(2, 2, 20)); // return: 24
+
+        var make = "Chevy";// Global variable
+        var model = "Camaro";// Global variable
+        function displayCar(make, model) {
+            var year = 2015; // Local variable
+            return "I own a " + year + " " + make + " " + model + ".";
+        }
+        window.console.log(displayCar(make, model));// Returns: I own a 2015 Chevy Camaro
+        window.console.log(year, make, model); //Returns: Uncaught ReferenceError: year is not defined
+
+
+        var model = "Camaro";
+        function displayCar() {
+            var model;
+            window.console.log("I own a 2015 Chevy " + model); // model is now undefined
+            model = "Suburban";
+        }
+
+        displayCar(); //returns: I own a 2015 Chevy undefined (as model is not defined)
+
+        //using strict mode
+        function displayCar() {
+            "use strict";
+            var model = "Suburban";
+            window.console.log("I own a 2015 Chevy " + model);
+        }
+
+        displayCar(); //returns: I own a 2015 Chevy Suburban
+
+        var sum = function (num1, num2) {
+            return num1 + num2;
+        };
+        window.console.log(sum(1, 1)); // returns: 2
+
+        //An anonymous function with one parameter that returns a DOM element, taking email by id
+        var $ = function (id) {
+            return window.document.getElementById(id);
+        };
+        //Calling the function and displaying the result
+        var emailAddress = $("email").value;
+        window.console.log(emailAddress); //returns: zruvalca@sdccd.edu
+
+
+    </script>
+</body>

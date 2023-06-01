@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Employee Managment App</title>
+</head>
+
+<body>
+    <h2>Employ Managment App</h2>
+    <form class="container" onsubmit="event.preventDefault()">
+        <!-- <form class="addEmp"> -->
+        <input class="input" id="fname" name="fname" placeholder="First Name*" required />
+        <input class="input" id="lname" name="lname" placeholder="Last Name" />
+        <input class="input" id="city" name="city" placeholder="City" />
+        <input class="input" id="job" name="job" placeholder="Job" />
+        <!-- </form> -->
+        <button class="button" onclick="Clear()">Clear</button>
+        <button class="button" onclick="Add()">Add</button>
+        <button class="button" onclick="Update()">Update</button>
+        <button class="button" onclick="Delete()">Delete</button>
+        <br /><br />
+        <select class="base" size="20" onclick="Click()">
+        </select>
+    </form>
+
+    <script src="script.js">
+    </script>
+
+</body>
+
+</html>

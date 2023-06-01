@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+    
+<head>
+    <title>Discount App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+<script>
+    function discount(price,type){
+    if(type==="Silver")
+        document.write("Your Price is: " + price*875/1000);
+    else if(type==="Gold") 
+        document.write("Your Price is: " + price*725/1000);
+    else document.write("Your Price is: " + price);
+    }
+</script>
+
+
+</head>
+<body>
+<h1> Discount App</h1>
+<form name="price">
+<p>
+Total Purschase:<input name="Cost"><br>
+Customer Type:<select name="Type" id="Type">
+    <option Type.value="null">None</option>
+    <option Type.value="Gold">Gold</option>
+    <option Type.value="Silver">Silver</option>
+  </select>
+<input type="button" value="submit"  class="button"
+onclick="discount(Cost.value, Type.value)"><br>
+</p>
+</form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>Shut the door</title>
+</head>
+
+<body>
+  <a href="link.html" OnMouseOver="mouseover('image1','image_on.gif')" OnMouseOut="mouseout('image1','image_out.gif')">
+    <img src="image_out.gif" boarder="0px" width="100px" height="200px" alt="move cursor here to Open the door!"
+      name="image1" />
+  </a>
+
+  <h2 id="demo"></h2>
+</body>
+
+<script>
+  function mouseover(doorClose) {
+    document[doorClose].src = "img1.png";
+    document.getElementById("demo").innerHTML = "Open The Door!";
+  }
+  function mouseout(doorOpen) {
+    document[doorOpen].src = "img2.png";
+    document.getElementById("demo").innerHTML = "Welcome here!";
+
+  }
+</script>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <input type="text" placeholder="Username" id="username" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <input type="email" placeholder="Email" id="email" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <label for="country">Country:</label>
+                <select name="content" class="cnt">
+                    <option selected="" class="dr" value="Default">(Select a country)</option>
+                    <option value="AF">Georgia</option>
+                    <option value="AL">Canada</option>
+                    <option value="DZ">Netherlands</option>
+                    <option value="AD">USA</option>
+                </select>
+            </div>
+            <div class="form-control">
+                <label for="Gender">Gender:</label>
+                <label class="check">Male
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+
+                <label class="check">Female
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+
+                <label class="check">other
+                    <input type="checkbox">
+                    <span></span>
+                </label>
+            </div>
+            <div class="form-control">
+                <input type="password" placeholder="Password" id="password" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <div class="form-control">
+                <input type="password" placeholder="Repeat Password" id="passwordCheck" />
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+            </div>
+            <button>Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
